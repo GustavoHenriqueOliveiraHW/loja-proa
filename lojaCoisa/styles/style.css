@@ -5,15 +5,17 @@ header{
     background-color: #000;
 }
 
-header ul {
+header>ul>li{
     list-style: none;
+    margin: 0;
 }
 #produtos{
     min-width: 100vw;
-    
+    min-height: 10vh;
     display: flex;
     flex-direction: row;
 }
 .produto{
     border: #000 1px solid;
+    min-height: 100%;
 }

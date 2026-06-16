@@ -1,3 +1,7 @@
 header ul {
     list-style: none;
 }
+#produtos{
+    display: flex;
+    flex-direction: row;
+}

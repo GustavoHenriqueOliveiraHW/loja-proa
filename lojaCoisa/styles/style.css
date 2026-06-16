@@ -1,3 +1,10 @@
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+}
+
 header ul {
     list-style: none;
 }

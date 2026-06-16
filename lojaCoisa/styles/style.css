@@ -14,3 +14,6 @@ header ul {
     display: flex;
     flex-direction: row;
 }
+.produto{
+    border: #000 1px solid;
+}

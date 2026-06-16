@@ -2,6 +2,8 @@ header ul {
     list-style: none;
 }
 #produtos{
+    min-width: 100vw;
+    
     display: flex;
     flex-direction: row;
 }

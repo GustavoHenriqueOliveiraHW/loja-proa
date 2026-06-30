@@ -49,3 +49,7 @@ async function init() {
     }
 }
 window.addEventListener("load",init());
+const carrinhoButton = document.getElementById("carrinhoButton");
+carrinhoButton.addEventListener("click", ()=>{
+  carrinhoButton.push()
+})

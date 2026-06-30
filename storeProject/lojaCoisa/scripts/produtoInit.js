@@ -4,7 +4,7 @@ async function init() {
 
       const carrinhoButton = document.getElementById("carrinhoButton");
       carrinhoButton.addEventListener("click", ()=>{
-      carrinhoButton.push(produtos.find(produto => produto.id === produtoId));
+      carrinho.push(produtos.find(produto => produto.id === produtoId));
       })
 
       const produtos = await fetchProdutos();

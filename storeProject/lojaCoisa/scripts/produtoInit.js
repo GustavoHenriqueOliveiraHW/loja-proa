@@ -2,6 +2,11 @@ async function init() {
       const params = new URLSearchParams(window.location.search);
       const produtoId = Number(params.get('id'));
 
+      const carrinhoButton = document.getElementById("carrinhoButton");
+      carrinhoButton.addEventListener("click", ()=>{
+      carrinhoButton.push(produtos.find(produto => produto.id === produtoId));
+      })
+
       const produtos = await fetchProdutos();
       const produto = produtos.find(p => p.id === produtoId);
 
@@ -49,7 +54,3 @@ async function init() {
     }
 }
 window.addEventListener("load",init());
-const carrinhoButton = document.getElementById("carrinhoButton");
-carrinhoButton.addEventListener("click", ()=>{
-  carrinhoButton.push()
-})

@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-block: clamp(8px, 1.5vw, 16px);
+    padding-inline: clamp(16px, 4vw, 32px);
+    border: 1px solid #e5e5e5;
+    background-color: wheat;
+}
+
+header #logo{
+    flex-shrink: 0;
+    display: flex;
+}
+#logo img{
+    max-width: 5rem;
+    width:100%;
+    height: auto;
+}
+
+header #search-container{
+    flex: 0 1 220px;
+    min-width: 0;
+}
+header #search-container input{
+    width: 100%;
+    padding: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+header nav{
+    flex: 1 1 auto;
+    min-width:0;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav a {
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+}
+main{
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+#produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1px;
+}
+
+.produto{
+    border: #ccc 1px solid;
+    min-height: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    text-decoration: none;
+    color: inherit;
+    display: block; 
+}
+.produto p{
+    font-size: 1rem;
+    margin: 8px 4px;
+    background: lightblue;
+}
+.produto  img {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+.produto >.price{
+    color: #555;
+}
+.produto:hover{
+    border-color: black;
+}
+
+#mostrar-botao{
+    background: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: background-color 0.1s;
+    padding: 8px 4px;
+}
+#mostrar-botao:active{
+    background: grey;
+}
+
+footer{
+    border: 1px solid #ccc;
+    background: wheat;
+    color: #555;
+    padding: clamp(4px, 0.1rem, 16px)
+}
+.esconder{
+    display:none;
+}

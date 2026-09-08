@@ -1,0 +1,12 @@
+main{
+    border: #555 solid 1px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: clamp(8px,1rem,32px);
+    border: 1px solid #555;
+    border-radius: 2px;
+
+}

@@ -6,26 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/index-page-style.css">
+    <link rel="stylesheet" href="styles/login-page-style.css">
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo">
+        <a href="" id="logo">
             <img src="imagens/logo.png" alt="Logo do Site" title="Logo da empresa" width="60" height="32">
         </a>
     </header>
     
     <main>
-   <form action="">
+   <form action="" id="form">
     <label for="nome">nome</label>
+    <input type="text" id="nome" name="nome">
     <label for="idade">idade</label>
-    <input type="text" id="name">
-    <input type="time" name="" id="idade">
+    <input type="number" name="idade" id="idade">
+    <label for="turma">Turma</label>
+
+    <select name="turma" id="turma" required >
+        <option value="" disabled selected="selected">Selecione</option>
+        <option value="1-info">1°Info</option>
+        <option value="2-info">2°Info</option>
+        <option value="meca">Meca</option>
+    </select>
+
+    <label for="senha">Senha</label>
+    <input type="password" name="senha" id="senha">
+
+    <label for="senha">Validar Senha</label>
+    <input type="password" name="senha" id="validar-senha">
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Cancelar</button>
+
    </form>
     </main>
     
     <footer>
         <h3 id="nomes">&copy; Desenvolvido por Allan Diogênes Bernardes de Souza e Gustavo Henrique de Oliveira - PROA 2026</h3>
     </footer>
+    <script src="scripts/cadastro.js"></script>
+
 </body>
 </html>

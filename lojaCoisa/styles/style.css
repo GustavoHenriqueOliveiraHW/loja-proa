@@ -89,3 +89,12 @@ footer{
     justify-self: end;
     grid-column: 2;
 }
+
+#container-carrinho{
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+}
+
+#container-carrinho.ativado{
+    transform: translateX(0);
+}

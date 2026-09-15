@@ -116,22 +116,3 @@ function debounce(fn, delay) {
   });
 })();
 
-const showCarrinho = document.getElementById("show-carrinho");
-showCarrinho.addEventListener("click", function(){
-  const carrinhoWrapper = document.createElement("div");
-  carrinho.forEach((item)=>{
-    const carrinhoItem = document.createElement("div");
-    const img = document.createElement("img");
-    img.src = item.image;
-    carrinhoItem.appendChild(img);
-    const p = document.createElement("p");
-    p.textContent = item.name;
-    carrinhoItem.appendChild(p);
-    const description = document.createElement("p") ;
-    description.textContent = item.description;
-    carrinhoItem.appendChild(description);
-    carrinhoWrapper.appendChild(carrinhoItem);
-    document.body.appendChild(carrinhoWrapper);})
-     
-})
-

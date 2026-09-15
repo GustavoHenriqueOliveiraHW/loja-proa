@@ -6,8 +6,10 @@ showCarrinho.addEventListener("click", function(){
   carrinhoWrapper.id ="container-carrinho";
   carrinho.forEach((item)=>{
     const carrinhoItem = document.createElement("div");
+    carrinhoItem.classList.add("carrinho-item")
     const img = document.createElement("img");
     img.src = item.image;
+    img.classList.add("img-produto-carrinho")
     carrinhoItem.appendChild(img);
     const p = document.createElement("p");
     p.textContent = item.name;
@@ -16,7 +18,8 @@ showCarrinho.addEventListener("click", function(){
     description.textContent = item.description;
     carrinhoItem.appendChild(description);
     carrinhoWrapper.appendChild(carrinhoItem);
-    document.querySelector("main").appendChild(carrinhoWrapper);})
+    document.querySelector("main").appendChild(carrinhoWrapper);
+    })
 
         requestAnimationFrame(() => {
         carrinhoWrapper.classList.add("ativado");

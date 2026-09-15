@@ -1,3 +1,12 @@
+
+if(!(localStorage.getItem("user"))){
+  window.location.href = "login.html";
+}
+else{
+  console.log(localStorage.getItem("user"));
+}
+
+
 const searchInput = document.querySelector("#search-container > input");
 const produtosGrid = document.getElementById("produtos");
 const toggleDisplayAllProducts = document.getElementById("mostrar-botao");

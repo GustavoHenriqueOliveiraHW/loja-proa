@@ -30,7 +30,7 @@ form.addEventListener("submit",function(e){
         message.textContent = "Nome não pode ser vazio";
         return;
     }
-    if(idade.value <= 0){
+    if(idade.value <= 0 || isNaN(idade.value)){
         message.textContent = "Idade tem de ser positiva";
         return;
     }

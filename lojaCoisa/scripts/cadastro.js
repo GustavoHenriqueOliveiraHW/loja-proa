@@ -47,7 +47,8 @@ form.addEventListener("submit",function(e){
     else{
         message.textContent = "";
         const user = new User(nome.value, idade.value, turma.value, senha.value);
-        localStorage.setItem("user", JSON.stringify(user))
+        localStorage.setItem("user", JSON.stringify(user));
+        window.location.href = "index.html";
     }
     
 })

@@ -1,0 +1,109 @@
+
+
+[{
+        "id": 1,
+        "name": "Jaqueta",
+        "price": 789.12,
+        "image": "imagens/jaqueta.avif",
+        "description":"Jaqueta com muito amor e carinho feita."
+    },
+    {
+        "id": 2,
+        "name": "Bola",
+        "price": 1.99,
+        "image": "imagens/bola.png",
+        "description": "Bola da copa (conservada, intocada por Neymar)"
+    },
+   
+ {
+        "id": 3,
+        "name": "Cheetos",
+        "price": 13.99,
+        "image": "imagens/cheetos.webp",
+        "description": "Salgadinho"
+    },  
+
+    {
+        "id": 4,
+        "name": "Ingresso",
+        "price": 23.99,
+        "image": "imagens/ingresso.jpg",
+        "description": "Ingresso pro filme"
+    },
+    {
+        "id": 5,
+        "name": "Laptop",
+        "price": 3008.05,
+        "image": "imagens/laptop.avif",
+        "description": "laptop"
+    },
+  { "id": 6,
+        "name": "Coisa importante",
+        "price": 1799.99,
+        "image": "imagens/important.png",
+        "description": "Uma coisa muito importante importante tal qual as coisas importantes que você tem de comprar (qual que você tem de comprar)"
+    },
+      {
+      "id":7,
+      "name": "Der Blaue Reiter",
+      "price": 74107,
+      "image": "imagens/derblauereiter.jpg",
+      "description":"Der Blaue Reiter de Kandinsky"
+      },
+    {
+        "id": 8,
+        "name": "Loja",
+        "price": 4500.20,
+        "image": "imagens/logo.png",
+        "description": "Essa pagina"
+    }, 
+{
+        "id": 9,
+        "name": "Gato",
+        "price": 1733.90,
+        "image": "imagens/gato.jpeg",
+        "description": "Gato felino"
+    },
+{
+     "id":10,
+"name":"São Paulo",
+"price":78.20,
+"image":"imagens/saopaulo.png",
+"description":"O estado de Sao Paulo"
+     },
+{
+        "id": 11,
+        "name": "Beatles",
+        "price": 52.69,
+        "image": "imagens/Beatlesforsale.jpg",
+        "description": "Beatles à venda"
+    },
+{
+        "id": 12,
+        "name": "Album Beatles",
+        "price": 2.80,
+        "image": "imagens/abbeyroad.jpeg",
+        "description": "one sweet dream"
+    },
+  {
+        "id": 14,
+        "name": "Red sun and ship",
+        "price": 14.14,
+        "image": "imagens/kandinsky.jpeg",
+        "description": "Obra de Kandinsky"
+    },
+ {
+        "id": 13,
+        "name": "Acorde místico",
+        "price": 14.14,
+        "image": "imagens/Mysticchord.png",
+        "description": "Acorde ou coleçâo de notas de Prometeus o poema do fogo e tudo aquilo lá outro do Scriabin"
+    },
+ {
+        "id": 15,
+        "name": "Bird",
+        "price": 900.90,
+        "image": "imagens/bird.jpeg",
+        "description": "Andorinhao pequeno"
+    }
+]

@@ -1,10 +1,14 @@
-
-if(!(localStorage.getItem("user"))){
+window.addEventListener("load", ()=>{
+if(!(localStorage.getItem("user")))
+  {
   window.location.href = "login.html";
-}
-else{
+  }
+else
+  {
   console.log(localStorage.getItem("user"));
-}
+  }
+});
+
 
 
 const searchInput = document.querySelector("#search-container > input");
@@ -14,19 +18,19 @@ let mostrarTudo = false;
 const PRODUTOS_BASE = 6;
 let atualListaProdutos = [];
 let PRODUTOS;
-const carrinho = [];
+const carrinho = JSON.parse(sessionStorage.getItem("carrinho")) ?? [];
 
 async function fetchProdutos(){
     try{
-const res = await fetch('produtos.json');
-        if (!res.ok) {
+    const res = await fetch('produtos.json');
+    if (!res.ok) {
       throw new Error(`HTTP error! Status: ${res.status}`);
     }
     return await res.json();
     }
     catch(error){
-          console.error("Falha em carregar os produtos—", error);
-       return JSON.parse(document.getElementById("produtos-reserva-json").textContent);
+      console.error("Falha em carregar os produtos—", error);
+      return [];
     }
 };
 

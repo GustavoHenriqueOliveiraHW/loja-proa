@@ -27,7 +27,9 @@
   flex-direction: column;
   width: fit-content;
 }
-
+#image-container{
+  background: #f3f3f3;
+}
 #add-carrinho-button{
   background-color: #f3f3f3;
   border: solid black 1px;

@@ -12,14 +12,15 @@ async function init() {
         }
       })
       carrinhoAddButton.addEventListener("click", ()=>{
-        pedidoInstanceCarrinho = carrinho.find(p => p.id === produto.id);
-        if(!pedidoInstanceCarrinho){
+      pedidoInstanceCarrinho = carrinho.find(p => p.id === produto.id);
+      if(!pedidoInstanceCarrinho){
         const pedido = {...produto, quantity: quantidade.valueAsNumber};
-      carrinho.push(pedido);
+        carrinho.push(pedido);
         }
-        else{
-          pedidoInstanceCarrinho.quantity += quantidade.valueAsNumber;
+      else{
+        pedidoInstanceCarrinho.quantity += quantidade.valueAsNumber;
         }
+        sessionStorage.setItem("carrinho", JSON.stringify(carrinho))
       console.log(carrinho);
       })
 

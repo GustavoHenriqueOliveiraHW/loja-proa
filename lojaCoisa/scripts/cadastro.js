@@ -70,6 +70,10 @@ n.value = currentValue + step;
 else{
 n.value = currentValue - step;
 }
+if(n.value < 0){
+          n.value = 1;
+}
+
 n.dispatchEvent(new Event("input"));
 }
 )

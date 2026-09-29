@@ -13,3 +13,13 @@ main{
     border: 1px solid #555;
     border-radius: 2px;
 }
+
+#formLogin{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 16px;
+    padding: clamp(8px,1rem,32px);
+    border: 1px solid #555;
+    border-radius: 2px;
+}

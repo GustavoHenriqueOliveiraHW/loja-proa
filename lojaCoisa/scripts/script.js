@@ -120,7 +120,7 @@ function debounce(fn, delay) {
   searchInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       const q = encodeURIComponent(searchInput.value.trim());
-      window.location.href = `index.html?q=${q}`;
+      window.location.href = `inicio.html?q=${q}`;
     }
   });
 })();

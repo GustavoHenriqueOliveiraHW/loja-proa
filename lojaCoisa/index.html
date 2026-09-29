@@ -6,45 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/index-page-style.css">
-    <link rel="stylesheet" href="styles/carrinho.css">
+    <link rel="stylesheet" href="styles/login-page-style.css">
 </head>
 <body>
     <header>
         <a href="index.html" id="logo">
             <img src="imagens/logo.png" alt="Logo do Site" title="Logo da empresa" width="60" height="32">
         </a>
-        
-        <div id="search-container">
-            <input type="search">
-        </div>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
+        <a href="login.html">Login</a>
     </header>
     
     <main>
-        <div id="options">
-            <button id="mostrar-botao">Mostrar todos</button>
-            <div id="show-carrinho">Carrinho</div>
-        </div>
-        <section id="produtos">
-            <a class="produto">
-                <img src="" alt="">
-                <p>nome</p>
-            </a>
-        </section>
+        <h1>CADASTRO</h1>
+   <form action="" id="form">
+    <label for="nome">nome</label>
+    <input type="text" id="nome" name="nome">
+    <label for="idade">idade</label>
+    <input type="number" name="idade" id="idade">
+    <label for="turma">Turma</label>
+
+    <select name="turma" id="turma" required >
+        <option value="" disabled selected="selected">Selecione</option>
+        <option value="1-info">1°Info</option>
+        <option value="2-info">2°Info</option>
+        <option value="meca">Meca</option>
+    </select>
+
+    <label for="senha">Senha</label>
+    <input type="password" name="senha" id="senha">
+
+    <label for="senha">Confirmar Senha</label>
+    <input type="password" name="senha" id="validar-senha">
+
+    <button type="submit" id="submit">Enviar</button>
+    <button type="reset">Cancelar</button>
+
+   </form>
     </main>
     
     <footer>
         <h3 id="nomes">&copy; Desenvolvido por Allan Diogênes Bernardes de Souza e Gustavo Henrique de Oliveira - PROA 2026</h3>
     </footer>
-    
-    <script src="scripts/script.js"></script>
-    <script src="scripts/indexInit.js"></script>
-    <script src="scripts/carrinho.js"></script>
+    <script src="scripts/cadastro.js"></script>
 </body>
 </html>
